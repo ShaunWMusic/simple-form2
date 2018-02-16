@@ -8,7 +8,6 @@ export default Ember.Controller.extend({
           profile.set('user', profile);
         }).then(() => {
           this.transitionToRoute('finished');
-
         })
 
   },
