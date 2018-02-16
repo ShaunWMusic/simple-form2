@@ -6,9 +6,8 @@ export default Ember.Controller.extend({
       let profile = this.store.createRecord('user', changesFromForm);
         profile.save().then(() => {
           profile.set('user', profile);
-        }).then(() => {
-          this.transitionToRoute('finished');
         })
+          this.transitionToRoute('finished');
 
   },
 },
