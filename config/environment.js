@@ -3,6 +3,11 @@
 
 module.exports = function(environment) {
   let ENV = {
+    DS: {
+      host: 'https://michelles-api.herokuapp.com',
+      // host: 'https://ember-adonis-simple-form.herokuapp.com',
+      namespace: 'api',
+    },
     modulePrefix: 'simple-form2',
     environment,
     rootURL: '/',

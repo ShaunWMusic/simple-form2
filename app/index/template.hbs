@@ -1,0 +1,8 @@
+{{outlet}}
+
+<!-- This is a simple form -->
+{{#simple-form onsubmit=(action "saveForm") as |formValues|}}
+  {{input value=formValues.email placeholder="Email"}}
+  {{input type="password" value=formValues.password placeholder="Password"}}
+  <button>Register</button>
+{{/simple-form}}
